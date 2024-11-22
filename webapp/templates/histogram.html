@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogrammes de Prévalence par Pathologie</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Histogrammes de la Prévalence par Pathologie</h1>
+
+    <div>
+        <h2>Histogramme de la Prévalence par Pathologie de Niveau 1</h2>
+        <div>{{ histogram1_html|safe }}</div>
+    </div>
+
+    <div>
+        <h2>Histogramme de la Prévalence par Pathologie de Niveau 2</h2>
+        <div>{{ histogram2_html|safe }}</div>
+    </div>
+
+    <div>
+        <h2>Histogramme de la Prévalence par Pathologie de Niveau 3</h2>
+        <div>{{ histogram3_html|safe }}</div>
+    </div>
+
+    <br>
+    <a href="/">Retour au Dashboard</a>
+</body>
+</html>

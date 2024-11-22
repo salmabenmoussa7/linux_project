@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur le Dashboard</h1>
+    <p>Choisissez une option pour visualiser les données :</p>
+
+    <!-- Section des cartes et graphiques principaux -->
+    <div class="section">
+        <a href="/map" class="button">Carte des Patients par Région</a>
+        <a href="/scatter" class="button">Évolution de la Prévalence par Année</a>
+    </div>
+
+    <!-- Section des histogrammes de pathologies -->
+    <div class="section">
+        <a href="/histogram/level1" class="button">Histogramme de la Prévalence par Pathologie Niveau 1</a>
+        <a href="/histogram/level2" class="button">Histogramme de la Prévalence par Pathologie Niveau 2</a>
+        <a href="/histogram/level3" class="button">Histogramme de la Prévalence par Pathologie Niveau 3</a>
+    </div>
+
+    <!-- Section des prévalences par sexe -->
+    <div class="section">
+        <a href="/pie/2020" class="button">Prévalence par sexe pour 2020</a>
+        <a href="/pie/2021" class="button">Prévalence par sexe pour 2021</a>
+        <a href="/pie/2019" class="button">Prévalence par sexe pour 2019</a>
+        <a href="/pie/2018" class="button">Prévalence par sexe pour 2018</a>
+        <a href="/pie/2017" class="button">Prévalence par sexe pour 2017</a>
+        <a href="/pie/2016" class="button">Prévalence par sexe pour 2016</a>
+        <a href="/pie/2015" class="button">Prévalence par sexe pour 2015</a>
+    </div>
+</body>
+</html>

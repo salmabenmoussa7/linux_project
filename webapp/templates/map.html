@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_001b9ebbf80a12e19a1ab3f7bd63f955 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_001b9ebbf80a12e19a1ab3f7bd63f955" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_001b9ebbf80a12e19a1ab3f7bd63f955 = L.map(
+                "map_001b9ebbf80a12e19a1ab3f7bd63f955",
+                {
+                    center: [46.603354, 1.888334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97281810771b5e034aa39d7b460086df = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_97281810771b5e034aa39d7b460086df.addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+            var marker_62ed547e879af56bf51ea56a33966753 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_4d7d179914a68fa2d186088ae27881f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3627a6016017fc9e8c6bda3cf453e63 = $(`<div id="html_c3627a6016017fc9e8c6bda3cf453e63" style="width: 100.0%; height: 100.0%;">Île-de-France<br>Patients: 67956700.0</div>`)[0];
+                popup_4d7d179914a68fa2d186088ae27881f7.setContent(html_c3627a6016017fc9e8c6bda3cf453e63);
+            
+        
+
+        marker_62ed547e879af56bf51ea56a33966753.bindPopup(popup_4d7d179914a68fa2d186088ae27881f7)
+        ;
+
+        
+    
+    
+            marker_62ed547e879af56bf51ea56a33966753.bindTooltip(
+                `<div>
+                     Île-de-France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65ec5e054f85188370881591525610e4 = L.marker(
+                [49.0, 4.0],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_5c1ae68db73b1a5a8450d3c2443185ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1f426adbd3bb518b71105d597280425 = $(`<div id="html_d1f426adbd3bb518b71105d597280425" style="width: 100.0%; height: 100.0%;">Champagne-Ardenne<br>Patients: 62923000.0</div>`)[0];
+                popup_5c1ae68db73b1a5a8450d3c2443185ac.setContent(html_d1f426adbd3bb518b71105d597280425);
+            
+        
+
+        marker_65ec5e054f85188370881591525610e4.bindPopup(popup_5c1ae68db73b1a5a8450d3c2443185ac)
+        ;
+
+        
+    
+    
+            marker_65ec5e054f85188370881591525610e4.bindTooltip(
+                `<div>
+                     Champagne-Ardenne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42e1163cb8f9e9ae90796af8532f2ac5 = L.marker(
+                [49.4, 1.1],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_a443bacfcd16e6a6452227cbc5195f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9fea2a868e0d929993b9c7357349434 = $(`<div id="html_e9fea2a868e0d929993b9c7357349434" style="width: 100.0%; height: 100.0%;">Haute-Normandie<br>Patients: 29734240.0</div>`)[0];
+                popup_a443bacfcd16e6a6452227cbc5195f8c.setContent(html_e9fea2a868e0d929993b9c7357349434);
+            
+        
+
+        marker_42e1163cb8f9e9ae90796af8532f2ac5.bindPopup(popup_a443bacfcd16e6a6452227cbc5195f8c)
+        ;
+
+        
+    
+    
+            marker_42e1163cb8f9e9ae90796af8532f2ac5.bindTooltip(
+                `<div>
+                     Haute-Normandie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c81ad1012d33b3465dd6212ce6ecb57 = L.marker(
+                [48.6, -2.0],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_aecfe86ed0bb7ebb2d6d3cd63be2c3b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbaf8dbf21fc29796b15298c6ed5b59c = $(`<div id="html_cbaf8dbf21fc29796b15298c6ed5b59c" style="width: 100.0%; height: 100.0%;">Bretagne<br>Patients: 149124940.0</div>`)[0];
+                popup_aecfe86ed0bb7ebb2d6d3cd63be2c3b6.setContent(html_cbaf8dbf21fc29796b15298c6ed5b59c);
+            
+        
+
+        marker_9c81ad1012d33b3465dd6212ce6ecb57.bindPopup(popup_aecfe86ed0bb7ebb2d6d3cd63be2c3b6)
+        ;
+
+        
+    
+    
+            marker_9c81ad1012d33b3465dd6212ce6ecb57.bindTooltip(
+                `<div>
+                     Bretagne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787fd07631db5906c8d06c15410133ff = L.marker(
+                [46.5, -0.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_88f63d20319a998ceb49b4eb8034fe1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83031051c7229e198e12abc01d486486 = $(`<div id="html_83031051c7229e198e12abc01d486486" style="width: 100.0%; height: 100.0%;">Poitou-Charentes<br>Patients: 15128640.0</div>`)[0];
+                popup_88f63d20319a998ceb49b4eb8034fe1f.setContent(html_83031051c7229e198e12abc01d486486);
+            
+        
+
+        marker_787fd07631db5906c8d06c15410133ff.bindPopup(popup_88f63d20319a998ceb49b4eb8034fe1f)
+        ;
+
+        
+    
+    
+            marker_787fd07631db5906c8d06c15410133ff.bindTooltip(
+                `<div>
+                     Poitou-Charentes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a5a0f4310956f3c6d7b1f631125ef25 = L.marker(
+                [45.7, 4.9],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_75dd2a73c19e6c283852c350583163ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cae79407adc4c1a732ac3bde581b6a91 = $(`<div id="html_cae79407adc4c1a732ac3bde581b6a91" style="width: 100.0%; height: 100.0%;">Rhône-Alpes<br>Patients: 2128986550.0</div>`)[0];
+                popup_75dd2a73c19e6c283852c350583163ed.setContent(html_cae79407adc4c1a732ac3bde581b6a91);
+            
+        
+
+        marker_3a5a0f4310956f3c6d7b1f631125ef25.bindPopup(popup_75dd2a73c19e6c283852c350583163ed)
+        ;
+
+        
+    
+    
+            marker_3a5a0f4310956f3c6d7b1f631125ef25.bindTooltip(
+                `<div>
+                     Rhône-Alpes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72fcd8401aa73f4322618b60a13c7911 = L.marker(
+                [44.0, -0.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_c2353c249b71b4231554840cb001d743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59ed445047d1b76b2c2838dc848a55a4 = $(`<div id="html_59ed445047d1b76b2c2838dc848a55a4" style="width: 100.0%; height: 100.0%;">Nouvelle-Aquitaine<br>Patients: 489936850.0</div>`)[0];
+                popup_c2353c249b71b4231554840cb001d743.setContent(html_59ed445047d1b76b2c2838dc848a55a4);
+            
+        
+
+        marker_72fcd8401aa73f4322618b60a13c7911.bindPopup(popup_c2353c249b71b4231554840cb001d743)
+        ;
+
+        
+    
+    
+            marker_72fcd8401aa73f4322618b60a13c7911.bindTooltip(
+                `<div>
+                     Nouvelle-Aquitaine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0d467ec144ced28e41fd9bbd7b628f8 = L.marker(
+                [43.5, 3.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_c69d0e50c9d552e87a01684a29b3781c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_193ad1b26f0525e81e6cc2c128c2543d = $(`<div id="html_193ad1b26f0525e81e6cc2c128c2543d" style="width: 100.0%; height: 100.0%;">Languedoc-Roussillon<br>Patients: 539703990.0</div>`)[0];
+                popup_c69d0e50c9d552e87a01684a29b3781c.setContent(html_193ad1b26f0525e81e6cc2c128c2543d);
+            
+        
+
+        marker_d0d467ec144ced28e41fd9bbd7b628f8.bindPopup(popup_c69d0e50c9d552e87a01684a29b3781c)
+        ;
+
+        
+    
+    
+            marker_d0d467ec144ced28e41fd9bbd7b628f8.bindTooltip(
+                `<div>
+                     Languedoc-Roussillon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6019cac4c274be762b3105eea00806da = L.marker(
+                [43.5, 1.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_401029ba5ba613e04a3befe25c47c749 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb08c5bf1f74584c5003c0e459d1d678 = $(`<div id="html_eb08c5bf1f74584c5003c0e459d1d678" style="width: 100.0%; height: 100.0%;">Midi-Pyrénées<br>Patients: 646601820.0</div>`)[0];
+                popup_401029ba5ba613e04a3befe25c47c749.setContent(html_eb08c5bf1f74584c5003c0e459d1d678);
+            
+        
+
+        marker_6019cac4c274be762b3105eea00806da.bindPopup(popup_401029ba5ba613e04a3befe25c47c749)
+        ;
+
+        
+    
+    
+            marker_6019cac4c274be762b3105eea00806da.bindTooltip(
+                `<div>
+                     Midi-Pyrénées
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa05d47a69a258294a6a0053b89ee598 = L.marker(
+                [45.7, 4.9],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_c932add684ffc3986663156fa11f78fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce85d2aee0fdda81686644f943ac76f3 = $(`<div id="html_ce85d2aee0fdda81686644f943ac76f3" style="width: 100.0%; height: 100.0%;">Rhône-Alpes<br>Patients: 1142504000.0</div>`)[0];
+                popup_c932add684ffc3986663156fa11f78fc.setContent(html_ce85d2aee0fdda81686644f943ac76f3);
+            
+        
+
+        marker_aa05d47a69a258294a6a0053b89ee598.bindPopup(popup_c932add684ffc3986663156fa11f78fc)
+        ;
+
+        
+    
+    
+            marker_aa05d47a69a258294a6a0053b89ee598.bindTooltip(
+                `<div>
+                     Rhône-Alpes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fa295aed6ba76cd93bfed86fb66f65f = L.marker(
+                [43.5, 6.0],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_233f2a7335081d156e523dd5f7b594fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1520394fb9aacde0772ba458a28faffe = $(`<div id="html_1520394fb9aacde0772ba458a28faffe" style="width: 100.0%; height: 100.0%;">Provence-Alpes-Côte d'Azur<br>Patients: 1025159220.0</div>`)[0];
+                popup_233f2a7335081d156e523dd5f7b594fd.setContent(html_1520394fb9aacde0772ba458a28faffe);
+            
+        
+
+        marker_7fa295aed6ba76cd93bfed86fb66f65f.bindPopup(popup_233f2a7335081d156e523dd5f7b594fd)
+        ;
+
+        
+    
+    
+            marker_7fa295aed6ba76cd93bfed86fb66f65f.bindTooltip(
+                `<div>
+                     Provence-Alpes-Côte d'Azur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3bb16b05f6e2a85db46818b527c1e7a = L.marker(
+                [48.5, 7.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_084b9321bce6835867df6039be7ad4a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d83ab6e2ff3c15fc2fe013f1cc5d8ff7 = $(`<div id="html_d83ab6e2ff3c15fc2fe013f1cc5d8ff7" style="width: 100.0%; height: 100.0%;">Alsace<br>Patients: 710136960.0</div>`)[0];
+                popup_084b9321bce6835867df6039be7ad4a7.setContent(html_d83ab6e2ff3c15fc2fe013f1cc5d8ff7);
+            
+        
+
+        marker_e3bb16b05f6e2a85db46818b527c1e7a.bindPopup(popup_084b9321bce6835867df6039be7ad4a7)
+        ;
+
+        
+    
+    
+            marker_e3bb16b05f6e2a85db46818b527c1e7a.bindTooltip(
+                `<div>
+                     Alsace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_855020548d8f967b60d1d8ecac5a70fb = L.marker(
+                [48.7, 6.2],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_79f8f7b2c0f9eb281cbd9a13dd1e956f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_060a2e660f7f53a9f8e4bc56b5e7d52a = $(`<div id="html_060a2e660f7f53a9f8e4bc56b5e7d52a" style="width: 100.0%; height: 100.0%;">Lorraine<br>Patients: 646338970.0</div>`)[0];
+                popup_79f8f7b2c0f9eb281cbd9a13dd1e956f.setContent(html_060a2e660f7f53a9f8e4bc56b5e7d52a);
+            
+        
+
+        marker_855020548d8f967b60d1d8ecac5a70fb.bindPopup(popup_79f8f7b2c0f9eb281cbd9a13dd1e956f)
+        ;
+
+        
+    
+    
+            marker_855020548d8f967b60d1d8ecac5a70fb.bindTooltip(
+                `<div>
+                     Lorraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30fc1088e21521e1a8ccb5b235ef31c9 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_386ae30f8bf286f4206ba86ea63c2eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55f0d496b633ea7695a40a106bfa80f1 = $(`<div id="html_55f0d496b633ea7695a40a106bfa80f1" style="width: 100.0%; height: 100.0%;">Île-de-France (Paris)<br>Patients: 1176196400.0</div>`)[0];
+                popup_386ae30f8bf286f4206ba86ea63c2eaa.setContent(html_55f0d496b633ea7695a40a106bfa80f1);
+            
+        
+
+        marker_30fc1088e21521e1a8ccb5b235ef31c9.bindPopup(popup_386ae30f8bf286f4206ba86ea63c2eaa)
+        ;
+
+        
+    
+    
+            marker_30fc1088e21521e1a8ccb5b235ef31c9.bindTooltip(
+                `<div>
+                     Île-de-France (Paris)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df6db9de6a56e55dc3415aa0d9a73506 = L.marker(
+                [49.4, 1.1],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_c48ddf9beee1bf1420151518d5fe50f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b581e45e739c0378895f98229b61eeb = $(`<div id="html_9b581e45e739c0378895f98229b61eeb" style="width: 100.0%; height: 100.0%;">Haute-Normandie<br>Patients: 1129391480.0</div>`)[0];
+                popup_c48ddf9beee1bf1420151518d5fe50f9.setContent(html_9b581e45e739c0378895f98229b61eeb);
+            
+        
+
+        marker_df6db9de6a56e55dc3415aa0d9a73506.bindPopup(popup_c48ddf9beee1bf1420151518d5fe50f9)
+        ;
+
+        
+    
+    
+            marker_df6db9de6a56e55dc3415aa0d9a73506.bindTooltip(
+                `<div>
+                     Haute-Normandie
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4c62139be42d9bb78df0859e84bec3d = L.marker(
+                [43.5, 6.0],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_1e5fc8268303542e21a0969009007aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7211b805694970178f27761a96605c8a = $(`<div id="html_7211b805694970178f27761a96605c8a" style="width: 100.0%; height: 100.0%;">Provence-Alpes-Côte d'Azur<br>Patients: 1471719870.0</div>`)[0];
+                popup_1e5fc8268303542e21a0969009007aa2.setContent(html_7211b805694970178f27761a96605c8a);
+            
+        
+
+        marker_a4c62139be42d9bb78df0859e84bec3d.bindPopup(popup_1e5fc8268303542e21a0969009007aa2)
+        ;
+
+        
+    
+    
+            marker_a4c62139be42d9bb78df0859e84bec3d.bindTooltip(
+                `<div>
+                     Provence-Alpes-Côte d'Azur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c6a26d8c07f6ad4a1f5691e6cfd6801 = L.marker(
+                [45.7, 4.9],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_4ef0af6cfdfe822697499ba627480a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b62359cf3ca52417745524f21846a90 = $(`<div id="html_9b62359cf3ca52417745524f21846a90" style="width: 100.0%; height: 100.0%;">Rhône-Alpes<br>Patients: 1008638700.0</div>`)[0];
+                popup_4ef0af6cfdfe822697499ba627480a68.setContent(html_9b62359cf3ca52417745524f21846a90);
+            
+        
+
+        marker_7c6a26d8c07f6ad4a1f5691e6cfd6801.bindPopup(popup_4ef0af6cfdfe822697499ba627480a68)
+        ;
+
+        
+    
+    
+            marker_7c6a26d8c07f6ad4a1f5691e6cfd6801.bindTooltip(
+                `<div>
+                     Rhône-Alpes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89b71f6b0ff737604944ee2f137814d4 = L.marker(
+                [48.5, 7.5],
+                {}
+            ).addTo(map_001b9ebbf80a12e19a1ab3f7bd63f955);
+        
+    
+        var popup_d4dd0f101ef60cd739b4952682a2361f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86ef7f2fb4564621f438f1ef706dee0 = $(`<div id="html_e86ef7f2fb4564621f438f1ef706dee0" style="width: 100.0%; height: 100.0%;">Alsace<br>Patients: 60128830.0</div>`)[0];
+                popup_d4dd0f101ef60cd739b4952682a2361f.setContent(html_e86ef7f2fb4564621f438f1ef706dee0);
+            
+        
+
+        marker_89b71f6b0ff737604944ee2f137814d4.bindPopup(popup_d4dd0f101ef60cd739b4952682a2361f)
+        ;
+
+        
+    
+    
+            marker_89b71f6b0ff737604944ee2f137814d4.bindTooltip(
+                `<div>
+                     Alsace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
