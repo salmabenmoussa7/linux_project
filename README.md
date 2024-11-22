@@ -1,5 +1,7 @@
 # Installation et Lancement du Projet
-1. Clonez ce projet sur votre machine locale en exécutant la commande suivante :
+1. Cloner le dépôt
+
+Clonez ce projet sur votre machine locale en exécutant la commande suivante :
    ```bash
    git clone https://github.com/salmabenmoussa7/linux_project.git
    ```
