@@ -1,6 +1,5 @@
 FROM python:3.10-buster
 RUN mkdir -p /dashboard_app
-RUN mkdir log
 WORKDIR /dashboard_app
 COPY . .
 RUN apt-get update && \
