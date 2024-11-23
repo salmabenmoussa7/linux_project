@@ -3,7 +3,7 @@
 
 Clonez ce projet sur votre machine locale en exécutant la commande suivante :
    ```bash
-   git clone https://github.com/salmabenmoussa7/linux_project.git
+   git clone https://github.com/salmabens/linux_project.git
    ```
 2. Installation de Docker
    
